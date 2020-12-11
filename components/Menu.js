@@ -17,7 +17,7 @@ let menuItems = [
   //     {each menu item as an <li>}
   //   </ul>
   // </div>
-  function menuMaker(){
+  function menuMaker(arr){
 
   // creating div element
   const menu = document.createElement('div')
@@ -34,7 +34,7 @@ let menuItems = [
   // Step 2: Inside the function, iterate over the array creating a list item <li> element for each item in the array.
   // Add those items to the <ul>
   
-  array.forEach(e => {
+  arr.forEach(e => {
     const listItem = document.createElement('li')
     listItem.textContent = e;
     ul.appendChild(listItem);
